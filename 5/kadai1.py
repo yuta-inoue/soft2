@@ -14,6 +14,9 @@ class Student:
 
   def get_name(self):
     return self.name
-  
+
   def promotion(self):
     self.grade+=1
+
+  def put(self):
+      print("student name= %s (%d)" %(self.name,self.grade))
