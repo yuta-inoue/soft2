@@ -6,7 +6,7 @@ if __name__ == '__main__':
     # カメラ映像の取得
     cap = cv2.VideoCapture(0)
     # 顔探索用の機械学習ファイルを取得
-    cascade_path = ""
+    cascade_path = "/usr/share/opencv/haarcascades/haarcascade_frontalface_alt.xml"
     cascade = cv2.CascadeClassifier(cascade_path)
     while(1):
         ret, im = cap.read()
